@@ -1,8 +1,8 @@
-cart = [
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"KALE"    => {:price => 3.00, :clearance => false}}
-]
+# cart = [
+#   {"AVOCADO" => {:price => 3.00, :clearance => true }},
+#   {"AVOCADO" => {:price => 3.00, :clearance => true }},
+#   {"KALE"    => {:price => 3.00, :clearance => false}}
+# ]
 
 def consolidate_cart(cart)
   cart.each_with_object({}) do |item, result|
@@ -42,11 +42,11 @@ def apply_clearance(cart)
       properties[:price] = updated_price.round(2)
     end
   end
-  puts cart
+  # puts cart
   cart
 end
 
-apply_clearance(cart)
+# apply_clearance(cart)
 def checkout(cart, coupons)
   # code here
 end
