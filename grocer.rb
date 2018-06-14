@@ -1,8 +1,8 @@
-cart = [
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"KALE"    => {:price => 3.00, :clearance => false}}
-]
+# cart = [
+#   {"AVOCADO" => {:price => 3.00, :clearance => true }},
+#   {"AVOCADO" => {:price => 3.00, :clearance => true }},
+#   {"KALE"    => {:price => 3.00, :clearance => false}}
+# ]
 
 def consolidate_cart(cart)
   cart.each_with_object({}) do |item, result|
@@ -18,8 +18,6 @@ def consolidate_cart(cart)
     end
   end
 end
-
-puts consolidate_cart(cart)
 
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
