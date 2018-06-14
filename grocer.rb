@@ -17,10 +17,9 @@ def consolidate_cart(cart)
       end
     end
   end
-  puts cart
 end
 
-consolidate_cart(cart)
+puts consolidate_cart(cart)
 
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
