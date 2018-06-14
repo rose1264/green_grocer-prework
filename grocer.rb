@@ -36,14 +36,10 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  cart.each do |item|
-    # puts item
-    item.each do |name, properties|
-      # puts properties
-      if properties[:clearance]
-        updated_price = properties[:price] * 0.80
-        properties[:price] = updated_price.round(2)
-      end
+  cart.each do |name, properties|
+    if properties[:clearance]
+      updated_price = properties[:price] * 0.80
+      properties[:price] = updated_price.round(2)
     end
   end
   puts cart
