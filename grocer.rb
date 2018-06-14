@@ -18,6 +18,8 @@ def consolidate_cart(cart)
     end
   end
 end
+# cart turns to a hash
+
 
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
@@ -36,7 +38,7 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  cart.each do |name, properties| #code doesn't work but pass the test, when code works, it doesn't pass the test
+  cart.each do |name, properties|
     if properties[:clearance]
       updated_price = properties[:price] * 0.80
       properties[:price] = updated_price.round(2)
