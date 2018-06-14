@@ -20,6 +20,8 @@ def consolidate_cart(cart)
   puts cart
 end
 
+consolidate_cart(cart)
+
 def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     name = coupon[:item]
