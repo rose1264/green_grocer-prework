@@ -17,6 +17,7 @@ def consolidate_cart(cart)
       end
     end
   end
+  puts cart
 end
 
 def apply_coupons(cart, coupons)
@@ -36,17 +37,15 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  cart.each do |name, properties|
+  cart.each do |name, properties| #code doesn't work but pass the test, when code works, it doesn't pass the test
     if properties[:clearance]
       updated_price = properties[:price] * 0.80
       properties[:price] = updated_price.round(2)
     end
   end
-  # puts cart
   cart
 end
 
-# apply_clearance(cart)
 def checkout(cart, coupons)
   # code here
 end
