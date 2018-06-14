@@ -40,10 +40,10 @@ def apply_clearance(cart)
     puts item
     item.each do |name, properties|
       puts properties
-      if properties[:clearance]
-        updated_price = properties[:price] * 0.80
-        properties[:price] = updated_price.round(2)
-      end
+      # if properties[:clearance]
+      #   updated_price = properties[:price] * 0.80
+      #   properties[:price] = updated_price.round(2)
+      # end
     end
   end
   cart
