@@ -42,7 +42,7 @@ def apply_clearance(cart)
       # puts properties
       if properties[:clearance]
         updated_price = properties[:price] * 0.80
-        properties[:price] = updated_price.round(2)
+        properties[:price] = updated_price.round(3)
       end
     end
   end
