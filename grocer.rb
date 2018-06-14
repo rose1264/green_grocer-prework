@@ -46,7 +46,7 @@ def apply_clearance(cart)
       end
     end
   end
-  # puts cart
+  puts cart
   cart
 end
 
